@@ -10,9 +10,16 @@
 
 :root {
     scroll-behavior: smooth;
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+    --header-toggler: rgba(255,255,255,0.55);
+    --header-toggler-border: rgba(255,255,255,0.1);
+    --btn-primary: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
+    width: 100%;
 }
