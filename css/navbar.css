@@ -217,6 +217,7 @@ i.fa-utensils {
     position: relative;
     padding: 8px;
     text-align: left;
+    width: 14%;
 }
 
 @keyframes headerInLeft {
