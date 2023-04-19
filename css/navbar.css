@@ -27,7 +27,7 @@ i.fa-utensils {
     margin-right: 16px;
 }
 
-.navbar__collapse {
+.navbar__full {
     flex-grow: 1;
     align-items: center;
     display: none;
@@ -91,10 +91,8 @@ i.fa-utensils {
 
 .dropdown-menu.active {
     display: block;
-    margin-right: 5px;
+    margin-left: 5px;
 }
-
-
 
 .btn__book {
     background-color: var(--primary);
@@ -175,6 +173,7 @@ i.fa-utensils {
 
 .img__fluid {
     width: 75%;
+    object-fit: contain;
 }
 
 .header__right img {
@@ -187,6 +186,37 @@ i.fa-utensils {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: imgRotate;
+}
+
+.navbar__collapse {
+    display: none;
+    position: relative;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    width: 100%;
+    transition: all 1s ease-out;
+}
+
+.navbar__nav_collapse {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse {
+    padding: 10px 0;
+    margin-left: 0;
+}
+
+.btn__collapse {
+    width: 130px;
+    padding-left: 10px;
+}
+
+.collapse__menu.active {
+    margin-left: 0;
+    position: relative;
+    padding: 8px;
+    text-align: left;
 }
 
 @keyframes headerInLeft {
@@ -220,7 +250,7 @@ i.fa-utensils {
         display: none;
     }
 
-    .navbar__collapse,
+    .navbar__full,
     .navbar__nav {
         display: flex;
     }
