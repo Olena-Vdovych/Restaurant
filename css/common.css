@@ -10,12 +10,12 @@
 
 :root {
     scroll-behavior: smooth;
-    --primary: #FEA116;
-    --light: #F1F8FF;
-    --dark: #0F172B;
+    --primary: rgb(254, 161, 22);
+    --light: rgb(241, 248, 255);
+    --dark: rgb(15, 23, 43);
     --header-toggler: rgba(255,255,255,0.55);
     --header-toggler-border: rgba(255,255,255,0.1);
-    --btn-primary: #fff;
+    --btn-primary: rgb(255, 255, 255);
 }
 
 .container {
