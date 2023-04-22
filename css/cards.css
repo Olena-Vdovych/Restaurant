@@ -1,0 +1,61 @@
+.cards {
+    background-color: var(--btn-primary);
+    padding: 48px 12px;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.card__info {
+    transition: .5s;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    border-radius: 2px;
+    padding: 16px 14px;
+    margin: 0 15px 30px 15px;
+}
+
+.text__primary {
+    color: var(--primary);
+    font-size: 3em;
+    margin-bottom: 1.5rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--dark);
+    font-family: "Nunito", sans-serif;
+}
+
+.card__text {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+}
+
+@media (min-width: 576px) {
+    .cards {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cards {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cards {
+        max-width: 960px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
