@@ -1,0 +1,14 @@
+const animatedElements = document.querySelectorAll('.cards');
+
+function checkScroll() {
+    animatedElements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 10.5;
+
+        if (elementPosition < screenPosition) {
+            element.classList.add('animate');
+        }
+    });
+}
+
+window.addEventListener('scroll', checkScroll);

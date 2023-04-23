@@ -38,6 +38,48 @@
     font-family: "Nunito", sans-serif;
 }
 
+.card__info {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.card__info:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.card__info:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.card__info:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.card__info:nth-child(4) {
+    animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.cards.animate {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
 @media (min-width: 576px) {
     .cards {
         display: grid;
