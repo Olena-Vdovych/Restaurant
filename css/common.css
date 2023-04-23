@@ -16,6 +16,8 @@
     --header-toggler: rgba(255,255,255,0.55);
     --header-toggler-border: rgba(255,255,255,0.1);
     --btn-primary: rgb(255, 255, 255);
+    --bs-gutter-y: 3rem;
+    --bs-gutter-x: 3rem;
 }
 
 .container {

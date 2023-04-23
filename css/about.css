@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about__images {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-y) / 2);
+    margin-top: var(--bs-gutter-y);
+}
+
+.img__about {
+    max-width: 100%;
+    height: auto;
+}
