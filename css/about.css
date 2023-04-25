@@ -4,7 +4,8 @@
     align-items: center;
 }
 
-.about__images {
+.about__images, 
+.about__content {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
