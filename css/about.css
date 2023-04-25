@@ -66,3 +66,38 @@
 .about__images .img img {
     max-width: 100%;
 }
+
+.about__images {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__images img {
+    opacity: 0;
+}
+
+.about__images .about_big {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.about__images .about_small {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
