@@ -5,7 +5,8 @@
 }
 
 .about__images, 
-.about__content {
+.about__content,
+.about__slots {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -91,6 +92,55 @@
     animation-delay: 1.5s;
 }
 
+.about__title {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.span__about {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    border-bottom: 2px solid rgb(254, 161, 22);
+    text-align: center;
+}
+
+.welcome__title {
+    margin-bottom: 1.5rem;
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    line-height: 0.2;
+    color: var(--dark);
+}
+
+i.fa-utensils {
+    font-size: 30px;
+}
+
+.about__text {
+    margin-bottom: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.about__slots {
+    display: flex;
+    flex-direction: column;
+}
+
+.years,
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
 @keyframes zoomIn {
     0% {
         opacity: 0;
