@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.about__images, 
+.about__images,
 .about__content,
 .about__slots {
     flex-shrink: 0;
@@ -106,6 +106,7 @@
     height: 1px;
     border-bottom: 2px solid rgb(254, 161, 22);
     text-align: center;
+    margin-bottom: 7px;
 }
 
 .welcome__title {
@@ -137,10 +138,69 @@ i.fa-utensils {
 .years,
 .popular {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    border-left: 4px solid rgb(254, 161, 22);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 20px;
 }
+
+.years__number,
+.popular__number {
+    margin-right: 1rem;
+    color: var(--primary);
+    margin-bottom: 0;
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.years__content,
+.popular__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.years__text,
+.popular__text {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.years__second_text,
+.popular__second-text {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--dark);
+}
+
+.more__info {
+    color: var(--light);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-top: 10px;
+    background-color: var(--primary);
+    font-size: 1rem;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @keyframes zoomIn {
     0% {
         opacity: 0;
