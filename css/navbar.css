@@ -213,6 +213,9 @@ i.fa-utensils {
     background-color: var(--dark);
     z-index: 1000;
     width: 100%;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    line-height: 12px;
 }
 
 .navbar__nav_collapse {
